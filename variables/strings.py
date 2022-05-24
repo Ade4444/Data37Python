@@ -51,7 +51,7 @@ s_list = ho.split(". ")
 print(s_list)
 #print(h.split(", "))
 
-new_sentence = ". ".join(s.capitalize() for x in ho.split(". "))
+new_sentence = ". ".join(h.capitalize() for x in ho.split(". "))
 print(new_sentence)
 
 this_will_work = 6
@@ -61,4 +61,9 @@ a = "Mr"
 b = "Blue"
 c = "Sky"
 
-print(a + " " + b +  " " + c)
+print(a + " " + b + " " + c)
+
+h = "I. am. testing. splitting"
+
+print(h.split(". "))
+
