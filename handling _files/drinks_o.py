@@ -2,6 +2,7 @@
 def make_orders(order):
     with open("drinks_menu.txt") as drink_file:
         drinks_options = drink_file.readline().split('\n')
+        drinks_options =
 
         if order in drinks_options:
             with open("drinks_ordered.txt", "a") as drink_ordered:

@@ -43,4 +43,9 @@ print(movies.values())
 
 print(movies.items())
 
-print(f"Adz fav movie is {}. It has a runtime of {} minutes and directed by {}.")
+mov = input("my fav movie is:")
+run_t = input("input is:")
+dir = input("directed by")
+
+print(f"Adz fav movie is {mov}. It has a runtime of {run_t} minutes and directed by {dir}.")
+print(f"Batman is an {movies['Batman']} movie")

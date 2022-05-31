@@ -28,10 +28,10 @@
 #
 # print("one", "two", 6345, {})
 #
-# def multi_args(*args):
-#        print(args, type(args))
-#
-# multi_args(1, 2, 3)
+    # def multi_args(*args):
+    #        print(args)
+    #
+    # multi_args(1, 2, 3)
 #
 # for arg in args:
 #     print(arg)
@@ -43,8 +43,8 @@
 #     for num in nums:
 #         result *= num
 #     return result
-# print(products(4, 5, 6))
-#
+# print(products(4, 5, 6, 2))
+
 # print(products())
 #
 # def products(*nums):
@@ -58,18 +58,18 @@
 # print(products(4, 5, 6))
 #
 # print(products())
-
-# def kwargs_demo(**kwargs):
+#
+# def kwargs_demo(**kwargs): # key word arguements
 #     print(kwargs, type(kwargs))
 #
 # print(kwargs_demo(a="One", b="Two"))
 
 # def calculate_tip(list_of_meals, total_cost, tip_pc):
-#     print("You had.")
+#     print("You had:")
 #
 #     for meal in list_of_meals:
 #         print(f" - {meal}")
-#     print(f"Your total is £{total_cost}")
+#     print(f"Your total is £{total_cost:.2f}")
 #     print(f"With a {tip_pc:.0%} tip, the total is £{total_cost * (1 + tip_pc):.2f}")
 #
 # calculate_tip(["Burger", "Pizza"], 18.50, 0.1)
@@ -114,7 +114,7 @@ def fizzbuzz(num: int) -> str:
         return "Buzz"
     if num % 3 == 0:
         return "Fizz"
-    return str(int)
+    return str(num)
 
 def fizzbuzz_game():
     for i in range(1, 101):

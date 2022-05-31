@@ -1,4 +1,3 @@
-//
 age = 16
 has_ticket = True
 
@@ -36,12 +35,12 @@ else:
 #"15" = "15 and over"
 
 #"18" = "18 and over"
-/
+
 age = 12
 has_ticket = True
 
 if has_ticket:
-    if age>= 15:
+    if age>= 15 and has_ticket:
         print("You can see this film.")
     else:
         print("Come back when youre older")
